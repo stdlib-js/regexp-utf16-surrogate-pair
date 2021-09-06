@@ -91,6 +91,22 @@ bool = RE_UTF16_SURROGATE_PAIR.test( 'abc' );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/regexp/utf16-unpaired-surrogate`][@stdlib/regexp/utf16-unpaired-surrogate]: return a regular expression to match an unpaired UTF-16 surrogate.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -149,6 +165,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 [utf-16]: https://en.wikipedia.org/wiki/UTF-16
+
+<!-- <related-links> -->
+
+[@stdlib/regexp/utf16-unpaired-surrogate]: https://github.com/stdlib-js/regexp-utf16-unpaired-surrogate
+
+<!-- </related-links> -->
 
 </section>
 
