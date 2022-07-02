@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.reUtf16SurrogatePair;
+})();
 })();
 </script>
 ```
@@ -95,6 +97,7 @@ var bool = reUtf16SurrogatePair.REGEXP.test( 'abc\uD800\uDC00def' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var RE_UTF16_SURROGATE_PAIR = reUtf16SurrogatePair();
 
@@ -107,6 +110,7 @@ bool = RE_UTF16_SURROGATE_PAIR.test( 'abc\uD800\uDC00def' );
 bool = RE_UTF16_SURROGATE_PAIR.test( 'abc' );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -206,7 +210,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/regexp/utf16-unpaired-surrogate]: https://github.com/stdlib-js/regexp-utf16-unpaired-surrogate/tree/umd
+[@stdlib/regexp/utf16-unpaired-surrogate]: https://github.com/stdlib-js/regexp-utf16-unpaired-surrogate/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
