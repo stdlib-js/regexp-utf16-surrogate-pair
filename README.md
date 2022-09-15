@@ -18,44 +18,36 @@ limitations under the License.
 
 -->
 
-# UTF-16 Surrogate Pair
+# reUtf16SurrogatePair
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > [Regular expression][mdn-regexp] to match a [UTF-16][utf-16] surrogate pair.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/regexp-utf16-surrogate-pair
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-reUtf16SurrogatePair = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var reUtf16SurrogatePair = require( 'path/to/vendor/umd/regexp-utf16-surrogate-pair/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.reUtf16SurrogatePair;
-})();
-</script>
+var reUtf16SurrogatePair = require( '@stdlib/regexp-utf16-surrogate-pair' );
 ```
 
 #### reUtf16SurrogatePair()
@@ -88,13 +80,8 @@ var bool = reUtf16SurrogatePair.REGEXP.test( 'abc\uD800\uDC00def' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var reUtf16SurrogatePair = require( '@stdlib/regexp-utf16-surrogate-pair' );
 
 var RE_UTF16_SURROGATE_PAIR = reUtf16SurrogatePair();
 
@@ -106,11 +93,6 @@ bool = RE_UTF16_SURROGATE_PAIR.test( 'abc\uD800\uDC00def' );
 
 bool = RE_UTF16_SURROGATE_PAIR.test( 'abc' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -206,7 +188,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/regexp/utf16-unpaired-surrogate]: https://github.com/stdlib-js/regexp-utf16-unpaired-surrogate/tree/umd
+[@stdlib/regexp/utf16-unpaired-surrogate]: https://github.com/stdlib-js/regexp-utf16-unpaired-surrogate
 
 <!-- </related-links> -->
 
