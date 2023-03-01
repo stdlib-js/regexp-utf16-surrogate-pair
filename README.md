@@ -107,7 +107,7 @@ bool = RE_UTF16_SURROGATE_PAIR.test( 'abc' );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/regexp/utf16-unpaired-surrogate`][@stdlib/regexp/utf16-unpaired-surrogate]</span><span class="delimiter">: </span><span class="description">return a regular expression to match an unpaired UTF-16 surrogate.</span>
+-   <span class="package-name">[`@stdlib/regexp-utf16-unpaired-surrogate`][@stdlib/regexp/utf16-unpaired-surrogate]</span><span class="delimiter">: </span><span class="description">return a regular expression to match an unpaired UTF-16 surrogate.</span>
 
 </section>
 
