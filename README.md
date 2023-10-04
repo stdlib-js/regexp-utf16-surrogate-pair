@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+reUtf16SurrogatePair = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-utf16-surrogate-pair/tags). For example,
+
+```javascript
 reUtf16SurrogatePair = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@v0.1.1-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var reUtf16SurrogatePair = require( 'path/to/vendor/umd/regexp-utf16-surrogate-p
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -103,7 +108,7 @@ var bool = reUtf16SurrogatePair.REGEXP.test( 'abc\uD800\uDC00def' );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-utf16-surrogate-pair@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
